@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "formes_geometriques/1.0.0": {
+        "runtime": {
+          "formes_geometriques.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "formes_geometriques/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
