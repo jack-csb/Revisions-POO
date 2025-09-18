@@ -1,30 +1,22 @@
-# Formes Geometriques en C#
+
+# Formes Géométriques en C#
 
 ## Description
-Ce projet est une application console en C# (.NET Framework) permettant de manipuler des formes geometriques :
+Ce projet est une projet console en C# permettant de manipuler des formes géométriques simples :
 - Cercle
 - Rectangle
-- Carre
-- Triangle
 - Point
-- Zone (ensemble de formes)
 
 Objectifs principaux :
-- Mise en pratique de la programmation orientee objet (POO)
-- Utilisation de classes abstraites, heritage et polymorphisme
+- Mise en pratique de la programmation orientée objet (POO)
+- Héritage et classes abstraites (`Forme`)
 - Ajout de tests unitaires avec MSTest
-- Code entierement commente pour faciliter la comprehension
 
 ---
 
-## Fonctionnalites
-- Creation et manipulation de differentes formes geometriques
-- Calcul automatique de :
-  - Aire
-  - Perimetre
-- Gestion des coordonnees avec la classe Point
-- Classe Zone permettant de regrouper plusieurs formes et de calculer leur aire et perimetre total
-- Tests unitaires pour verifier les calculs
+## Prérequis
+Pour exécuter et tester ce projet, vous devez avoir installé le **.NET SDK** :  
+👉 [Télécharger le .NET SDK](https://dotnet.microsoft.com/fr-fr/download/visual-studio-sdks?cid=getdotnetsdk)
 
 ---
 
@@ -32,93 +24,51 @@ Objectifs principaux :
 ```
 FormesGeometriques/
 │
-├── Program.cs          # Point d'entree du programme
+├── Program.cs          # Point d'entrée du programme
 ├── Forme.cs            # Classe abstraite Forme
-├── Cercle.cs           # Classe Cercle (heritage de Forme)
-├── Rectangle.cs        # Classe Rectangle (heritage de Forme)
-├── Carre.cs            # Classe Carre (heritage de Rectangle)
-├── Triangle.cs         # Classe Triangle (heritage de Forme)
-├── Point.cs            # Classe Point (coordonnees X, Y)
-├── Zone.cs             # Classe Zone (collection de Formes)
-└── Tests/              # Projet de tests unitaires (MSTest)
+├── Cercle.cs           # Classe Cercle
+├── Rectangle.cs        # Classe Rectangle
+├── Point.cs            # Classe Point
+│
+└── Tests/              # Projet de tests unitaires
     ├── CercleTests.cs
     ├── RectangleTests.cs
-    └── ...
+    └── PointTests.cs
 ```
 
 ---
 
 ## Exemple d'utilisation
-Extrait de `Program.cs` :
+Dans `Program.cs` :
 
 ```csharp
-Console.WriteLine("=== Demonstration Formes Geometriques ===\n");
+Console.WriteLine("=== Démonstration Formes Géométriques ===");
 
-// Cercle
 Forme cercle = new Cercle(5);
-Console.WriteLine($">> Cercle : Perimetre = {cercle.Perimetre():F2}, Aire = {cercle.Aire():F2}");
+Console.WriteLine($"Cercle : Périmètre = {cercle.Perimetre()}, Aire = {cercle.Aire()}");
 
-// Rectangle
-Point centreRectangle = new Point(2, 3);
-Rectangle rectangle = new Rectangle(10, 5, centreRectangle);
-Console.WriteLine($">> Rectangle au centre {rectangle.Centre} : Perimetre = {rectangle.Perimetre()}, Aire = {rectangle.Aire()}");
+Rectangle rectangle = new Rectangle(4, 6);
+Console.WriteLine($"Rectangle : Périmètre = {rectangle.Perimetre()}, Aire = {rectangle.Aire()}");
 
-// Zone
-Zone zone = new Zone();
-zone.AjouterForme(cercle);
-zone.AjouterForme(rectangle);
-Console.WriteLine($">> Zone : Aire totale = {zone.AireTotale():F2}, Perimetre total = {zone.PerimetreTotal():F2}");
-```
-
-### Resultat attendu dans la console :
-```
-=== Demonstration Formes Geometriques ===
-
->> Cercle : Perimetre = 31,42, Aire = 78,54
->> Rectangle au centre (2, 3) : Perimetre = 30, Aire = 50
->> Zone : Aire totale = 128,54, Perimetre total = 61,42
+Point p1 = new Point(0, 0);
+Point p2 = new Point(3, 4);
+Console.WriteLine($"Distance entre {p1} et {p2} = {p1.Distance(p2)}");
 ```
 
 ---
 
 ## Tests unitaires
-Les tests unitaires sont realises avec MSTest.  
-Exemple : `CercleTests.cs`
+Des tests unitaires sont inclus pour vérifier les calculs de base (`Cercle`, `Rectangle`, `Point`).  
+Ils utilisent **MSTest**.
 
-```csharp
-[TestClass]
-public class CercleTests
-{
-    [TestMethod]
-    public void Aire_Rayon1_DoitDonnerPI()
-    {
-        Cercle c = new Cercle(1);
-        Assert.AreEqual(Math.PI, c.Aire(), 0.001);
-    }
+### Lancer les tests
+1. Ouvrir Visual Studio  
+2. Menu **Test → Fenêtres → Explorateur de tests**  
+3. Appuyer sur **`Ctrl + R, A`** pour exécuter tous les tests  
 
-    [TestMethod]
-    public void Perimetre_Rayon1_DoitDonner2PI()
-    {
-        Cercle c = new Cercle(1);
-        Assert.AreEqual(2 * Math.PI, c.Perimetre(), 0.001);
-    }
-}
-```
-
----
-
-## Concepts utilises
-- Programmation Oriente Objet (POO)
-  - Abstraction (`Forme`)
-  - Heritage (`Rectangle` <- `Forme`, `Carre` <- `Rectangle`)
-  - Polymorphisme (`Aire()` et `Perimetre()` definis dans chaque forme)
-- Tests unitaires avec MSTest
-- Bonnes pratiques :
-  - Nommage en PascalCase pour les classes et methodes
-  - Nommage en camelCase pour les variables
-  - Code commente et lisible
+👉 Les résultats s’affichent en ✅ vert si tout est correct.
 
 ---
 
 ## Auteur
-Projet developpe par Jack dans le cadre des revisions POO en C#.
+Projet réalisé par Jack dans le cadre des révisions POO en C#.

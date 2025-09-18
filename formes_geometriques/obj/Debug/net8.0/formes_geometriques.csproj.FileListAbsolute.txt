@@ -26,3 +26,17 @@ F:\Documents\A2\C#\formes_geometriques\formes_geometriques\obj\Debug\net8.0\refi
 F:\Documents\A2\C#\formes_geometriques\formes_geometriques\obj\Debug\net8.0\formes_geometriques.pdb
 F:\Documents\A2\C#\formes_geometriques\formes_geometriques\obj\Debug\net8.0\formes_geometriques.genruntimeconfig.cache
 F:\Documents\A2\C#\formes_geometriques\formes_geometriques\obj\Debug\net8.0\ref\formes_geometriques.dll
+C:\Users\jackl\Downloads\Revisions-POO-main\Revisions-POO-main\formes_geometriques\bin\Debug\net8.0\formes_geometriques.exe
+C:\Users\jackl\Downloads\Revisions-POO-main\Revisions-POO-main\formes_geometriques\bin\Debug\net8.0\formes_geometriques.deps.json
+C:\Users\jackl\Downloads\Revisions-POO-main\Revisions-POO-main\formes_geometriques\bin\Debug\net8.0\formes_geometriques.runtimeconfig.json
+C:\Users\jackl\Downloads\Revisions-POO-main\Revisions-POO-main\formes_geometriques\bin\Debug\net8.0\formes_geometriques.dll
+C:\Users\jackl\Downloads\Revisions-POO-main\Revisions-POO-main\formes_geometriques\bin\Debug\net8.0\formes_geometriques.pdb
+C:\Users\jackl\Downloads\Revisions-POO-main\Revisions-POO-main\formes_geometriques\obj\Debug\net8.0\formes_geometriques.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jackl\Downloads\Revisions-POO-main\Revisions-POO-main\formes_geometriques\obj\Debug\net8.0\formes_geometriques.AssemblyInfoInputs.cache
+C:\Users\jackl\Downloads\Revisions-POO-main\Revisions-POO-main\formes_geometriques\obj\Debug\net8.0\formes_geometriques.AssemblyInfo.cs
+C:\Users\jackl\Downloads\Revisions-POO-main\Revisions-POO-main\formes_geometriques\obj\Debug\net8.0\formes_geometriques.csproj.CoreCompileInputs.cache
+C:\Users\jackl\Downloads\Revisions-POO-main\Revisions-POO-main\formes_geometriques\obj\Debug\net8.0\formes_geometriques.dll
+C:\Users\jackl\Downloads\Revisions-POO-main\Revisions-POO-main\formes_geometriques\obj\Debug\net8.0\refint\formes_geometriques.dll
+C:\Users\jackl\Downloads\Revisions-POO-main\Revisions-POO-main\formes_geometriques\obj\Debug\net8.0\formes_geometriques.pdb
+C:\Users\jackl\Downloads\Revisions-POO-main\Revisions-POO-main\formes_geometriques\obj\Debug\net8.0\formes_geometriques.genruntimeconfig.cache
+C:\Users\jackl\Downloads\Revisions-POO-main\Revisions-POO-main\formes_geometriques\obj\Debug\net8.0\ref\formes_geometriques.dll

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Documents\\A2\\C#\\formes_geometriques\\formes_geometriques\\formes_geometriques.csproj",
+      "projectUniqueName": "C:\\Users\\jackl\\Downloads\\Revisions-POO-main\\Revisions-POO-main\\formes_geometriques\\formes_geometriques.csproj",
       "projectName": "formes_geometriques",
-      "projectPath": "F:\\Documents\\A2\\C#\\formes_geometriques\\formes_geometriques\\formes_geometriques.csproj",
+      "projectPath": "C:\\Users\\jackl\\Downloads\\Revisions-POO-main\\Revisions-POO-main\\formes_geometriques\\formes_geometriques.csproj",
       "packagesPath": "C:\\Users\\jackl\\.nuget\\packages\\",
-      "outputPath": "F:\\Documents\\A2\\C#\\formes_geometriques\\formes_geometriques\\obj\\",
+      "outputPath": "C:\\Users\\jackl\\Downloads\\Revisions-POO-main\\Revisions-POO-main\\formes_geometriques\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
